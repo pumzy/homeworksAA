@@ -1,0 +1,3 @@
+pry
+require 'sqlite3'
+require './plays.rb'
