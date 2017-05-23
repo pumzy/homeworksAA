@@ -42,8 +42,39 @@
             <li>Depending on your mood, add some sugar or nutella</li>
             <li>Use a tablespoon to scoop individual mouthfuls of cereal and consume them</li>
           </ol>
-      </section>
 
+      </section>
+      <h2>Would you like to review this recipe?</h2>
+      <form action="/reviews" method="post">
+
+      <label for="name">Name</label>
+      <input id="name" type="text">
+
+      <label for="rating">Rating</label>
+      1<input type="radio" value="1">
+      2<input type="radio" value="2">
+      3<input type="radio" value="3">
+      4<input type="radio" value="4">
+      5<input type="radio" value="5">
+
+      <label for="expertise">Rating</label>
+      <select id="expertise">
+        <option selected disabled>Select Cooking Expertise</option>
+        <option value="Sometimes Cook">Sometimes Cook</option>
+        <option value="Cook Everyday">Cook Everyday</option>
+        <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+        <option value="Professional Chef">Professional Chef</option>
+      </select>
+
+      <label>Review<textarea></textarea></label>
+
+      <input type="submit"  value="Submit your review">
+
+      <section>
+
+
+        </form>
+      </section>
       <footer>
         <p>This is my recipe, pls no copy</p>
       </footer>
