@@ -1,0 +1,153 @@
+Can put stuff on one line in JS
+
+In Javascript, an expression is a line of code that returns a value
+A statement is any line of code
+Every expression needs a semi-colon at the end
+ Statements that aren't expressions don't generally require semi-colons, and may cause syntax errors
+
+if (boolean) {
+  // code block...
+} else {
+  // another code block...
+}
+
+Essentially curly braces are used as block code
+ -- Can be used to do many things
+
+ function foo() {
+  // code block...
+}
+
+let obj = { key: "value" };
+
+let result = [];
+for (let i = 1; i < 10; i++) {
+  if (i % 3 === 0) {
+    continue;
+  }
+  result.push(i);
+}
+
+Continue is the same as next in ruby
+if(condition){do something}
+The semicolon essentially has to be at the end of a line that does something
+Break exits the loop
+
+switch (expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+The break in the code above is needed so that if the condition is met, when in executes the code, the function will exit, and not go on to the default
+
+
+Dont use == in JS, use ===
+Array.prototype.slice([start, [end]])
+
+5 Primitive Types:
+Numbers
+String (text)
+Boolean
+Undefined
+Null
+and objects.
+
+NaN stands for Not-A-Number
+  -- This is the result of any illegal numerical operations
+
+In Javascript, zeros, empty strings, undefined, null, and NaN are all considered falsey values. Everything else is true.
+
+In JavaScript, numbers are primitives and do not have object methods. Basically the primitive types can have no methods
+Math.abs(-5) -- Calling abs on the math object
+
+Constructing a new object in JS
+var cat = {
+  name: "Breakfast",
+  age: 8,
+  purr: function () {
+    console.log("meow!");
+  }
+};
+  - Basically can even define methods in the definition of the variable
+
+To declare a functionally-scoped variable, use the var keyword.
+ -- Basically only persists within the scope of a function?
+
+We can use let to declare block-scoped variables
+ -- Essentially only persist within the block itself
+ -- Cannot redefine let in the same scope
+
+Const -- Block scoped like let
+but cannot redefine the variable.
+
+There are multiple ways to declare a function and assign it to a variable in Javascript.
+
+function functionName(arg1, arg2, arg3, argN) {
+  // code block...
+}
+
+const functionName = (arg1, arg2, arg3, argN) => {
+  // code block...
+};
+
+
+You must give a function arguments in JS for it to actually carry out its function
+eg: something(); if the function something had no args
+
+In JavaScript, functions usually do not have implicit returns (Unless it is a single fat arrow line function)
+
+Can assign properties to functions -
+
+  const fun = function () {
+  console.log("So much fun");
+  };
+
+  fun.amount = 100;
+  console.log(fun.amount);
+  // => 100
+
+Can basically treat functions like any other object
+
+Callbacks - Essentially putting functions inside other functions
+cb when you see it stands for callback
+
+if variables are defined in a higher scope, they will be accessible
+Can use sub function within the main function if needed
+
+returns are explicit in JS
+
+function Counter() {
+  let count = 1;
+
+  return () => count++;
+}
+
+let counter = new Counter();
+console.log(counter()); // => 1
+console.log(counter()); // => 2
+counter.count; // undefined
+
+
+The count variable was captured in another function?
+this is a lot like self in ruby
+
+If youre defining a function on an object, then you can use this.something in order to call the methods previously defined on the class
+
+Recall that function-style method calls use window or global as this.
+
+times(10, cat.ageOneYear.bind(cat));
+
+Arrow functions do not create a new scope
+
+(parameters, go, here) => {
+  statements;
+  return value;
+}
+
+Fat arrows return implicitly
