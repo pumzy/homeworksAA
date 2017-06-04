@@ -1,0 +1,98 @@
+h1 { font-size: 38px;
+margin-bottom: 10px;
+}
+
+h2 { font-size: 32px;
+}
+
+.ingredients_list { list-style: square inside; }
+
+li { list-style: upper-roman;}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: :inherit;
+  width: 900px;
+  margin: 0 auto;
+}
+
+header > img {
+  width: 100px;
+}
+ul li a { text-decoration: none;
+          color: inherit;}
+
+* { background-color: whitesmoke; }
+
+
+
+
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+
+}
+
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+section {
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+aside {
+  width: 180px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.ingredients_list li{
+  margin-bottom: 15px;
+}
+
+.directions_list li{
+  margin-bottom: 15px;
+}
+
+#directions {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#ingredients {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+display: block
+}
+
+input[type="text"] {
+  display: block;
+  width: 175px;
+  margin: 10px;
+}
+
+
+select {
+  display: inline-block;
+  margin: 10px 0;
+  width: 180px;
+}
+
+label {
+  display: block;
+}
+
+figure > image {
+width: 100%;
+}
