@@ -1,0 +1,14 @@
+
+Root
+  GiphysSearchContainer
+    GiphysSearch
+      GiphysIndex
+       GiphysIndexItem
+
+       GiphysSearchContainer: Container for our GiphysSearch component.
+
+       GiphysSearch: renders the search bar and handles all of the search logic (keeping track of the query and trigger the AJAX request on submit); renders the GiphysIndex.
+
+       GiphysIndex: iterates over the giphys in props, rendering a GiphysIndexItem for each one.
+
+We want the giphys slice of state to be an array which we will iterate over
